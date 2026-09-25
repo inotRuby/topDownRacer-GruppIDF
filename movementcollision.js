@@ -6,7 +6,15 @@
         x: 100,
         y: 200,
         radius: 15,
-        speed: 850 // pixlar per sekund
+        speed: 200 // pixlar per sekund
+    };
+
+    // Hinder (Rektangel)
+    const obstacle = {
+        x: 250,
+        y: 125,
+        width: 100,
+        height: 150
     };
 
     // Knappar
@@ -64,6 +72,10 @@
 
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Rita Hinder
+        ctx.fillStyle = '#e74c3c';
+        ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
 
         // Rita Spelare
         ctx.beginPath();
