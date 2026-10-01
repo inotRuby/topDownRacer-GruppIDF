@@ -1,1 +1,4 @@
-//css file for styling the canvas
+/* css file for styling the canvas */
+canvas {
+    border: 1px solid black;
+}
