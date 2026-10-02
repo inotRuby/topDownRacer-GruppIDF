@@ -94,7 +94,3 @@
         requestAnimationFrame(loop);
     }
 
-    requestAnimationFrame(time => {
-        lastTime = time;
-        loop(time);
-    });
