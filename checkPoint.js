@@ -19,14 +19,15 @@ function check(cp){
     ctx.fillStyle = 'green'
     ctx.fillRect(cp.x, cp.y, cp.width, cp.height)
 };
-/*oden som ritar ut checkpoints, ligger nu aktivt i draw() i movementcollision.js
+/*code that activates checkpoints, currently active in draw() in movementcollision.js
 for (const cp of checkpoints){
             check(cp)
         }
 */
 
 /*
-hårdkodade mått
-rita ut checkpoints
-checka så player har åkt genom checkpoints
+non dynamic measurements *optional
+draw checkpoints                       Works
+checka that player has gone through checkpoint
+different checkpoints depending on level
 */
