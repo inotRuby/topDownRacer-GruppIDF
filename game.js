@@ -4,17 +4,13 @@
 // Denna fil ska inte heller vara ihopkopplad
 
 class SpelObjekt {
-    constructor(x, y, width, height, bildKalla) {
+    constructor(x, y, width, height) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
         this.kollisionsradie = width / 2;
         this.aktiv = true;
-        this.bild = new Image();
-        if (bildKalla) {
-            this.bild.src = bildKalla;
-        }
     }
 
 
