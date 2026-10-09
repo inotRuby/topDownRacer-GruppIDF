@@ -28,6 +28,6 @@ for (const cp of checkpoints){
 /*
 non dynamic measurements *optional
 draw checkpoints                       Works
-checka that player has gone through checkpoint
+check that player has gone through checkpoint
 different checkpoints depending on level
 */
