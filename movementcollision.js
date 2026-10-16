@@ -72,15 +72,19 @@
         // Rita Hinder
         ctx.fillStyle = '#e74c3c';
         ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+        
+        //draw checkpoints
+        for (const cp of checkpoints){
+            if (cp.level === 1){ //1 is a placeholder for 'currentLevel'
+                check(cp)
+            }
+        }
 
         // Rita Spelare
         ctx.beginPath();
         ctx.arc(player.x, player.y, player.radius, 0, Math.PI * 2);
         ctx.fillStyle = '#3498db';
         ctx.fill();
-        for (const cp of checkpoints){
-            check(cp)
-        }
     }
 
     function loop(time) {
