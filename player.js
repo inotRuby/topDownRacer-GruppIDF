@@ -44,16 +44,6 @@ class Player {
     }
 }
 
-
-
-
-
-
-
-
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
 // Spelare
 const player = {
 x: 100,
@@ -151,28 +141,6 @@ requestAnimationFrame(time => {
 lastTime = time;
 loop(time);
 });
-    // Spelare
-    const player = {
-        x: 100,
-        y: 200,
-        radius: 15,
-        speed: 200 // pixlar per sekund
-    };
-
-    // Hinder (Rektangel)
-    const obstacle = {
-        x: 250,
-        y: 125,
-        width: 100,
-        height: 150
-    };
-
-    // Knappar
-    const keys = {};
-    window.addEventListener('keydown', e => keys[e.key.toLowerCase()] = true);
-    window.addEventListener('keyup', e => keys[e.key.toLowerCase()] = false);
-
-    let lastTime = performance.now();
 
     function update(dt) {
         // 1. Läs in riktning från WASD
@@ -249,4 +217,3 @@ loop(time);
 
         requestAnimationFrame(loop);
     }
-
