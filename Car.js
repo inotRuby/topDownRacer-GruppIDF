@@ -1,5 +1,5 @@
 //this file is for the car class
-class Cars extends Player {
+/*class Cars extends Player {
 
     constructor(x, y, width, height, speed, color, playerNumber) {
         super(x, y, width, height, speed, color);
@@ -10,7 +10,7 @@ class Cars extends Player {
     }
 
     
-}
+}*/
 /*also this is the first js file that the html loads 
 meaning that things that need to be defined 
 in all folders have to be defined here */
