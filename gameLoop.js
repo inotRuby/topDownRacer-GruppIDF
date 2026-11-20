@@ -31,5 +31,14 @@ class GameEngine {
                 grid[r][c] = 0;
             }
         }
+        for (let r = 0; r < this.rows; r++) {
+            for (let c = 0; c < this.cols; c++) {
+                x = c * this.cell_size;
+                y = r * this.cell_size;
+
+                
+            }
+        }
     }
+
 }
