@@ -49,7 +49,7 @@ class Player {
         ctx.fillStyle = this.color; // sätter färg på bil
         ctx.fillRect(-this.width / 2, -this.height / 2, this.width, this.height); // ritar bil
         ctx.restore(); // återställer canvas state
-}
+}}
 
 
 
