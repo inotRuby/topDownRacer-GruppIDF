@@ -51,16 +51,6 @@ class Player {
         ctx.restore(); // återställer canvas state
 }}
 
-
-
-
-
-
-
-
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
 // Spelare
 const player = {
 x: 100,
@@ -156,5 +146,5 @@ requestAnimationFrame(loop);
 
 requestAnimationFrame(time => {
 lastTime = time;
-loop(time);
+//loop(time);
 });
