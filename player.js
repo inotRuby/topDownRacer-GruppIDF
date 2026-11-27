@@ -139,7 +139,7 @@ requestAnimationFrame(loop);
 
 requestAnimationFrame(time => {
 lastTime = time;
-loop(time);
+//loop(time);
 });
 
     function update(dt) {

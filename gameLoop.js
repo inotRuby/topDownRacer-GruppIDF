@@ -41,7 +41,22 @@ class GameEngine {
             }
         }
     }
-
+    drawObject(obj){
+        this.ctx.fillStyle = obj.color;
+        this.ctx.fillRect(obj.x,obj.y,obj.width,obj.height);
+    }
+    gameLoop(){
+        //1. handle input
+        //2. update all objects
+        //3. clear screen
+        this.ctx.clearRect(0,0, this.canvas.width, this.canvas.height)
+        //4. redraw everything
+        for(let obj of this.objectList){
+            this.drawObject(obj);
+        }
+        //5. request next frame
+        requestAnimationFrame(() => this.gameLoop());
+    }
 }
 const test = new GameEngine("canvas",20,30,20)
 //height="400" width="600"
