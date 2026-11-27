@@ -8,7 +8,7 @@ class GameEngine {
 
         this.gridLayout = [];
 
-        this.player = new this.player(); 
+        //this.player = new this.player(); 
 
         this.rows = rows;
         this.cols = cols;
@@ -28,17 +28,23 @@ class GameEngine {
         for (let r = 0; r < this.rows; r++) {
             this.gridLayout[r] = [];
             for (let c = 0; c < this.cols; c++) {
-                grid[r][c] = 0;
+                this.gridLayout[r][c] = 0;
             }
         }
         for (let r = 0; r < this.rows; r++) {
             for (let c = 0; c < this.cols; c++) {
-                x = c * this.cell_size;
-                y = r * this.cell_size;
-
+                let x = c * this.cell_size;
+                let y = r * this.cell_size;
+                this.ctx.strokeStyle = "#cccccc";
+                this.ctx.strokeRect(x,y,this.cell_size,this.cell_size);
                 
             }
         }
     }
 
 }
+const test = new GameEngine("canvas",20,30,20)
+//height="400" width="600"
+test.drawGrid();
+console.log(test.gridLayout);
+
